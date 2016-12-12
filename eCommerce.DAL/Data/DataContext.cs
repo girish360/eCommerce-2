@@ -21,7 +21,7 @@ namespace eCommerce.DAL.Data
         /// any entity to be persisted must be declared here
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<Orderitem> Customers { get; set; }
-
+        public DbSet<Orderitem> Orderitems { get; set; }
+        public DbSet<Customer> Customers { get; set; }
     }
 }

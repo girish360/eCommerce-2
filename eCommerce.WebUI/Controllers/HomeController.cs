@@ -10,9 +10,7 @@ namespace eCommerce.WebUI.Controllers
     public class HomeController : Controller
     {
         public ActionResult Index()
-        {
-            DataContext context = new DataContext();
-            
+        {    
             return View();
         }
 
