@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.Contracts", "eCommerce.Contracts\eCommerce.Contracts.csproj", "{15275E51-19EB-4CD6-8391-E17138912EDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.Model", "eCommerce.Model\eCommerce.Model.csproj", "{9E4832B3-CE86-4B72-BE24-97EACFCA83D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.DAL", "eCommerce.DAL\eCommerce.DAL.csproj", "{05905C0B-8584-4E4A-BD15-ECDB8FBFC668}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce", "eCommerce\eCommerce.csproj", "{12F29E88-95B3-4538-8F8E-118B7357A6FF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15275E51-19EB-4CD6-8391-E17138912EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15275E51-19EB-4CD6-8391-E17138912EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15275E51-19EB-4CD6-8391-E17138912EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15275E51-19EB-4CD6-8391-E17138912EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E4832B3-CE86-4B72-BE24-97EACFCA83D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E4832B3-CE86-4B72-BE24-97EACFCA83D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E4832B3-CE86-4B72-BE24-97EACFCA83D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E4832B3-CE86-4B72-BE24-97EACFCA83D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05905C0B-8584-4E4A-BD15-ECDB8FBFC668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05905C0B-8584-4E4A-BD15-ECDB8FBFC668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05905C0B-8584-4E4A-BD15-ECDB8FBFC668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05905C0B-8584-4E4A-BD15-ECDB8FBFC668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12F29E88-95B3-4538-8F8E-118B7357A6FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F29E88-95B3-4538-8F8E-118B7357A6FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F29E88-95B3-4538-8F8E-118B7357A6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F29E88-95B3-4538-8F8E-118B7357A6FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
