@@ -69,10 +69,6 @@
       <Project>{9e4832b3-ce86-4b72-be24-97eacfca83d2}</Project>
       <Name>eCommerce.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\eCommerce\eCommerce.WebUI.csproj">
-      <Project>{12f29e88-95b3-4538-8f8e-118b7357a6ff}</Project>
-      <Name>eCommerce.WebUI</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

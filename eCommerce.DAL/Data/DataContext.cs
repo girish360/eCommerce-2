@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.DAL.Data
 {
-    class DataContext : DbContext
+    public class DataContext : DbContext
     {
         /// you can either pass the NAME of connection string (e.g. from a we.config, and explicitly declare in there
         public DataContext()
