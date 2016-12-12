@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Playground;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,36 +12,39 @@ namespace Playground
         {
             var dog = new Dog();
             var cat = new Cat();
-
+           
             dog.Eyes = 2;
             dog.Legs = 4;
             dog.isMansBestFriend();
         }
     }
 
-    public class Dog
+    public class Animal
     {
         public int Legs { get; set; }
         public int Eyes { get; set; }
         public bool Loyal { get; set; }
-
+        
         public bool isMansBestFriend()
         {
             return Loyal;
         }
     }
 
-    internal class Cat
+    public class Dog :Animal
     {
-        public int Legs { get; set; }
-        public int Eyes { get; set; }
-        public bool Loyal { get; set; }
-
-        public bool isMansBestFriend()
+        public bool IsDog()
         {
-            return Loyal;
+            return true;
         }
+
     }
 }
+
+    public class Cat :Animal 
+    {
+        
+    }
+
 
     

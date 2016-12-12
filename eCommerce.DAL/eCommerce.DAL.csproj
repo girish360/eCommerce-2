@@ -51,14 +51,6 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Data\DataContext.cs" />
-    <Compile Include="Migrations\201612120944340_Initial.cs" />
-    <Compile Include="Migrations\201612120944340_Initial.Designer.cs">
-      <DependentUpon>201612120944340_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201612121928416_Initial1.cs" />
-    <Compile Include="Migrations\201612121928416_Initial1.Designer.cs">
-      <DependentUpon>201612121928416_Initial1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201612121930252_Initial2.cs" />
     <Compile Include="Migrations\201612121930252_Initial2.Designer.cs">
       <DependentUpon>201612121930252_Initial2.cs</DependentUpon>
@@ -74,12 +66,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201612120944340_Initial.resx">
-      <DependentUpon>201612120944340_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201612121928416_Initial1.resx">
-      <DependentUpon>201612121928416_Initial1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201612121930252_Initial2.resx">
       <DependentUpon>201612121930252_Initial2.cs</DependentUpon>
     </EmbeddedResource>
