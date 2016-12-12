@@ -10,7 +10,9 @@ namespace eCommerce.DAL.Data
 {
     public class DataContext : DbContext
     {
-        /// you can either pass the NAME of connection string (e.g. from a we.config, and explicitly declare in there
+        
+
+        /// you can either pass the NAME of connection string (e.g. from a web.config, and explicitly declare in there
         public DataContext()
             : base("DefaultConnection")
         {
