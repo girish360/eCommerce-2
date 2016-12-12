@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.Model
 {
-    class Product
+    public class Product
     {
         public int ProductId { get; set; }
         public string Description { get; set; }

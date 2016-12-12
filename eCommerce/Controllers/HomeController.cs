@@ -10,6 +10,7 @@ namespace eCommerce.Controllers
     {
         public ActionResult Index()
         {
+            DataContext context = new DataContext
             return View();
         }
 
