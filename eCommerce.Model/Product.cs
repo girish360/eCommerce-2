@@ -14,5 +14,6 @@ namespace eCommerce.Model
         [MaxLength(255)]
         public string ImageUrl { get; set; }
         public decimal Price { get; set; }
+        public decimal CostPrice { get; set; }
     }
 }
