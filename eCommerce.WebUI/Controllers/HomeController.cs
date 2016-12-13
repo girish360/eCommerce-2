@@ -1,4 +1,5 @@
 ﻿using eCommerce.DAL.Data;
+using eCommerce.DAL.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,9 @@ namespace eCommerce.WebUI.Controllers
     public class HomeController : Controller
     {
         public ActionResult Index()
-        {    
+        {
+            CustomerRepository customers = new CustomerRepository(new DataContext());
+            
             return View();
         }
 
