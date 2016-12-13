@@ -13,7 +13,8 @@ namespace eCommerce.WebUI.Controllers
         public ActionResult Index()
         {
             CustomerRepository customers = new CustomerRepository(new DataContext());
-            
+            ProductRepository products = new ProductRepository(new DataContext());
+
             return View();
         }
 
