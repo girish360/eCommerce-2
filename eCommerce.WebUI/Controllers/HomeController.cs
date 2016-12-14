@@ -5,15 +5,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using eCommerce.Model;
 
 namespace eCommerce.WebUI.Controllers
 {
     public class HomeController : Controller
     {
+        IRepositoryBase<Customer>customers;
+        public HomeController(IRepositoryBase<Customer> customers )
+        {
+            this.customers = customers;
+        }
+
+
         public ActionResult Index()
         {
-            CustomerRepository customers = new CustomerRepository(new DataContext());
+            //CustomerRepository customers = new CustomerRepository(new DataContext());
             ProductRepository products = new ProductRepository(new DataContext());
+
+            // = new CustomerRepository(new DataContext());
 
             return View();
         }
