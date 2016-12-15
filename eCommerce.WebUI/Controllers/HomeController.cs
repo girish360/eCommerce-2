@@ -25,6 +25,13 @@ namespace eCommerce.WebUI.Controllers
             return View(productList);
         }
 
+        public ActionResult Details(int id)
+        {
+            var product = products.GetById(id);
+
+            return View(product);
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
