@@ -39,7 +39,25 @@ namespace eCommerce.WebUI.Controllers
         public ActionResult CreateProduct(Product product)
         {
             products.Insert(product);
-            
+            products.Commit();
+
+            return RedirectToAction("ProductList");
+        }
+
+        public ActionResult EditProduct(int id)
+        {
+            Product product = products.GetById(id);
+            products.Commit();
+
+            return View(product);
+        }
+
+        [HttpPost]
+        public ActionResult EditProduct(Product product)
+        {
+            products.Update(product);
+            products.Commit();
+
             return RedirectToAction("ProductList");
         }
     }
