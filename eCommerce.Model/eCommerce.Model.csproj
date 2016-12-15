@@ -52,10 +52,14 @@
     <Compile Include="Basket.cs" />
     <Compile Include="BasketItem.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="IVoucher.cs" />
+    <Compile Include="IVoucherType.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Orderitem.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Voucher.cs" />
+    <Compile Include="VoucherType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
