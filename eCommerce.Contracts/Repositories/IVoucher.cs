@@ -1,6 +1,6 @@
-﻿namespace eCommerce.Model
+﻿namespace eCommerce.Contracts.Repositories
 {
-    internal interface IVoucher
+    public interface IVoucher
     {
         int VoucherId { get; set; }
         string VoucherCode { get; set; }

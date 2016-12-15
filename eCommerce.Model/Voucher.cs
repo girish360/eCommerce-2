@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using eCommerce.Contracts.Repositories;
 
 namespace eCommerce.Model
 {

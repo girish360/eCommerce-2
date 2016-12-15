@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using eCommerce.Contracts.Repositories;
 
 namespace eCommerce.Model
 {
-    class VoucherType : IVoucherType
+    class VoucherType : IVoucherType    
     {
         public int VoucherTypeId { get; set; }
         public string VoucherModule { get; set; }
