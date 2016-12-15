@@ -1,10 +1,11 @@
-﻿using eCommerce.DAL.Data;
+﻿using eCommerce.Contracts.Repositories;
+using eCommerce.DAL.Data;
 using System.Data.Entity;
 using System.Linq;
 
 namespace eCommerce.DAL.Repositories
 {
-     public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity: class
+    public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class 
     {
         internal DataContext context;
         internal DbSet<TEntity> dbset;
@@ -51,6 +52,7 @@ namespace eCommerce.DAL.Repositories
             context.Entry(entity).State = EntityState.Modified;
         }
 
+
         public virtual void Delete(TEntity entity)
         {
             if (context.Entry(entity).State == EntityState.Detached)
@@ -63,6 +65,11 @@ namespace eCommerce.DAL.Repositories
         {
             TEntity entity = dbset.Find(id);
             Delete(entity);
+        }
+
+        public virtual void Commit()
+        {
+            context.SaveChanges();
         }
 
         public virtual void Dispose()

@@ -1,8 +1,10 @@
 using System;
+using eCommerce.Contracts.Repositories;
 using eCommerce.DAL.Repositories;
 using eCommerce.Model;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
+using System.ComponentModel;
 
 namespace eCommerce.WebUI.App_Start
 {
@@ -39,7 +41,13 @@ namespace eCommerce.WebUI.App_Start
 
             // TODO: Register your types here
             // container.RegisterType<IProductRepository, ProductRepository>();
-            container.RegisterType<IRepositoryBase<Customer>, CustomerRepository>();
+
+            container.RegisterType<IRepositoryBase<Product>, CustomerRepository>(); 
+            container.RegisterType<IRepositoryBase<Customer>, ProductRepository>(); 
         }
+
+
+            
+        
     }
 }
