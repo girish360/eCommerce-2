@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace eCommerce.Model
 {
-    class BasketVoucher
+    public class BasketVoucher
     {
         public int BasketVoucherId { get; set; }
         public int VoucherId { get; set; }

@@ -6,7 +6,7 @@ namespace eCommerce.Model
 {
     public class Basket
     {
-        public int BasketId { get; set; }
+        public Guid BasketId { get; set; }
         public DateTime Date { get; set; }  
 
         public virtual ICollection<BasketItem>BasketItems { get; set; }

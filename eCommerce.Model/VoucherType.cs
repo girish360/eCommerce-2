@@ -3,7 +3,7 @@ using eCommerce.Contracts.Repositories;
 
 namespace eCommerce.Model
 {
-    class VoucherType : IVoucherType    
+    public class VoucherType : IVoucherType    
     {
         public int VoucherTypeId { get; set; }
         public string VoucherModule { get; set; }
